@@ -3,11 +3,26 @@
     <head>
         <meta charset="utf-8"/>
         <title>rmsv</title>
+        <style>
+            html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+}
+.h_iframe iframe {
+    width:100%;
+    height:100%;
+}
+.h_iframe {
+    height: 100%;
+    width:100%;
+}
+            </style>
     </head>
     <body>
-        <iframe src="https://yandex.ru/maps/covid19?embed=covid" style="overflow:hidden;height:100%;width:100%" 
-        height="100%" 
-     width="100%"></iframe> 
+        <div class="h_iframe">
+        <iframe src="https://yandex.ru/maps/covid19?embed=covid" frameborder="0" allowfullscreen></iframe> 
+        </div>
     </body>
 </html>
 
